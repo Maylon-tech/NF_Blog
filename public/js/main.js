@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="/post-details/${encodeURIComponent(
                             post.title.trim().replace(/\s+/g, "-").toLowerCase()
                         )}">
-                        <h2 class="post-title">${post.title}</h2>
+                       
                     </a>
                     <div class="post-desc">${post.content}</div>
                     <a href="/post-details/${encodeURIComponent(

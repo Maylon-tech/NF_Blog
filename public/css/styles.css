@@ -352,6 +352,14 @@ header.shadow .admin-btn .bx {
   flex-direction: column;
   align-items: center;
 }
+.admin-panel .menu-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1060px;
+  padding: 0.6rem 1rem;
+}
 .admin-panel h1 {
   font-size: 2rem;
   color: var(--bg-color);
@@ -359,10 +367,9 @@ header.shadow .admin-btn .bx {
   text-align: center;
 }
 .add-post-link {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--second-color);
   text-decoration: none;
-  margin-bottom: 1rem;
   display: block;
 }
 #post-table {
@@ -409,7 +416,6 @@ header.shadow .admin-btn .bx {
 .admin-back-link {
   font-size: 1.2rem;
   color: var(--second-color);
-  margin-top: 1.2rem;
 }
 
 .post-filter {

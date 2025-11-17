@@ -9,8 +9,11 @@
 <body>
     <div class="admin-panel">
         <h1>Admin Panel</h1>
-        <a href="/add" class="add-post-link">Add New Post</a>
-
+        
+        <div class="menu-btn">
+            <a href="/" class="admin-back-link">Back To Home</a>
+            <a href="/add" class="add-post-link">Add New Post</a>
+        </div>
         <table id="post-table">
             <thead>
                 <tr>
@@ -23,8 +26,7 @@
             <tbody>
              <!-- Admin post will show dynamically here  -->
             </tbody>
-        </table>
-        <a href="/" class="admin-back-link">Back To Home</a>
+        </table>        
     </div>
 
     <script>
