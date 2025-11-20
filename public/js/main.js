@@ -6,23 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const postContainer = document.getElementById('posts')
             postContainer.innerHTML = posts.map((post) => `
                 <div class="post ${post.category}">
-                    <h1>${post.title}</h1>
-                    ${
-                        post.image
-                        ? `<img class="post-img" src="${post.image}" alt="${post.title}" />`
-                        : ""
-                    }
-                    <h3 class="post-category">${post.category}</h3>
                     <a href="/post-details/${encodeURIComponent(
                             post.title.trim().replace(/\s+/g, "-").toLowerCase()
-                        )}">
-                       
-                    </a>
-                    <div class="post-desc">${post.content}</div>
-                    <a href="/post-details/${encodeURIComponent(
-                            post.title.trim().replace(/\s+/g, "-").toLowerCase()
-                        )}" class="read-more">
-                        Read More
+                        )}" class="read-more"
+                    >
+                        <h1 class="post-title">${post.title}</h1>
+                        ${
+                            post.image
+                            ? `<img class="post-img" src="${post.image}" alt="${post.title}" />`
+                            : ""
+                        }
+                        <h3 class="post-category">${post.category}</h3>
+                        <a href="/post-details/${encodeURIComponent(
+                                post.title.trim().replace(/\s+/g, "-").toLowerCase()
+                            )}">
+                        
+                        </a>
+                        <div class="post-desc">${post.content}</div>
                     </a>
                 </div>
             `).join("")

@@ -9,6 +9,23 @@
 <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
 </head>
 <body>
+    <header>
+        <div class="nav container">
+            <!-- LOGO -->
+             <a href="/" class="logo">Community<span>Blog</span></a>
+             <!-- NAV -->
+              <div class="nav-right">
+                <a href="/admin" class="admin-btn">
+                    <i class="bx bx-user"></i>
+                    Dashboard
+                </a>
+                <a href="/add" class="write-btn">
+                    <i class="bx bx-pencil"></i>
+                    Write
+                </a>
+              </div>
+        </div>
+    </header>
     <div class="add-post">
         <h1>Add New Post</h1>
         <form action="/add" method="post" enctype="multipart/form-data">
