@@ -64,7 +64,14 @@
                         <td>${post.title}</td>
                         <td>${post.category || "No Category"}</td>
                         <td>
-                            <button class="delete-button" data-id="${post.id}">Delete</button>    
+                            <button class="delete-button" data-id="${post.id}">
+                                Delete
+                            </button> 
+                            <a class="delete-button" href="/post-details/${encodeURIComponent(
+                            post.title.trim().replace(/\s+/g, "-").toLowerCase()
+                        )}">
+                                View
+                            </a>   
                         </td>
                     </tr>
                 `)

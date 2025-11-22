@@ -11,7 +11,7 @@
 
 /* VARIABLES */
 :root {
-  --second-color: #ff4494;
+  --second-color: rgb(36, 103, 141);
 
   --text-color: #001244;
   --container-color: #01282f;
@@ -290,7 +290,7 @@ header.shadow .admin-btn .bx {
 }
 
 .add-post {
-  padding: 3rem 0;
+  padding: 6rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -354,7 +354,7 @@ header.shadow .admin-btn .bx {
 /* ADMIN PANEL */
 
 .admin-panel {
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
   background: var(--container-color);
   min-height: 100vh;
   display: flex;
@@ -372,14 +372,14 @@ header.shadow .admin-btn .bx {
 .admin-panel h1 {
   font-size: 2rem;
   color: var(--bg-color);
-  margin-bottom: 2rem;
   text-align: center;
 }
 .add-post-link {
   font-size: 1.2rem;
-  color: var(--second-color);
-  text-decoration: none;
-  display: block;
+  background: var(--second-color);
+  color: #eee;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
 }
 #post-table {
   width: 100%;
@@ -424,7 +424,10 @@ header.shadow .admin-btn .bx {
 
 .admin-back-link {
   font-size: 1.2rem;
-  color: var(--second-color);
+  background: var(--second-color);
+  color: #eee;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
 }
 
 .post-filter {
